@@ -10,6 +10,7 @@
 	color: white;
 }
 */
+
 body {
 	background: url(../images/bg-concert.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -17,14 +18,37 @@ body {
   	-o-background-size: cover;
 	background-size: cover;
 	color: white;
+	/* Fill on all screens, bootstrap takes care of the rest */
+	width: 100%;
+	height: 100%;
+	position: fixed;
 }
 
 .header-wrap {
 	margin-top: 5%;
 }
 
+.mt {
+	margin-top: 10%;
+}
+
+.pu {
+	margin-top: -15%;
+}
+
 .v-align {
 	position: relative;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+#form img {
+	display: none;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
+	
+	body {
+		position: absolute;
+	}
 }
