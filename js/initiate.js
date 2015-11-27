@@ -1,3 +1,5 @@
 $( "#eventTrigger" ).click(function() {
-	$("#form img").first().show("300");
-})
+	if ( $("#form").is( ":hidden" ) ) {
+		$("#form").slideDown("slow");
+	}
+});

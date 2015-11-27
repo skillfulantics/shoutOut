@@ -33,7 +33,7 @@ body {
 }
 
 .pu {
-	margin-top: -15%;
+	margin-top: -30%;
 }
 
 .v-align {
@@ -42,13 +42,26 @@ body {
 	transform: translateY(-50%);
 }
 
-#form img {
+#form {
 	display: none;
+}
+
+#pitbull-cut {
+	width: 125%;
+	height: 125%;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
 	
 	body {
 		position: absolute;
+	}
+
+	#pitbull-cut {
+		display: none;
+	}
+
+	#eventTrigger {
+		margin-top: 25%;
 	}
 }
