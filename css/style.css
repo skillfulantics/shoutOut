@@ -1,15 +1,3 @@
-/*#headerintro {
-	background: url(../images/bg-concert.jpg) no-repeat center center fixed;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-	background-size: cover;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	color: white;
-}
-*/
 
 body {
 	background: url(../images/bg-concert.jpg) no-repeat center center fixed;
@@ -48,7 +36,6 @@ body {
 
 #pitbull-cut {
 	width: 125%;
-	height: 125%;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -63,5 +50,19 @@ body {
 
 	#eventTrigger {
 		margin-top: 25%;
+	}
+}
+
+@media only screen and (max-width:1280px) and (min-width:1025px) { 
+	#pitbull-cut {
+		width:150%;
+	}
+
+	.pu {
+		margin-top: -25%;
+	}
+
+	#eventTrigger {
+		margin-top: 15%;
 	}
 }
