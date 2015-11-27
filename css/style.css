@@ -6,28 +6,17 @@ body {
   	-o-background-size: cover;
 	background-size: cover;
 	color: white;
-	/* Fill on all screens, bootstrap takes care of the rest */
+	overflow-x: hidden;
 	width: 100%;
-	height: 100%;
-	position: fixed;
+}
+
+.header-outer {
+	width: 100%;
 }
 
 .header-wrap {
-	margin-top: 5%;
-}
-
-.mt {
-	margin-top: 10%;
-}
-
-.pu {
-	margin-top: -30%;
-}
-
-.v-align {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
+	max-width: 70%;
+	margin: 5% auto 0 auto;
 }
 
 #form {
@@ -35,34 +24,39 @@ body {
 }
 
 #pitbull-cut {
-	width: 125%;
+	width: 80%;
+}
+
+.pitbull-wrapper {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+
+.mic-wrapper {
+	position: absolute;
+	bottom: 0;
+	right: 30%;
+}
+
+.mic-wrapper img {
+	width: 80%;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
-	
-	body {
-		position: absolute;
+
+	.pitbull-wrapper {
+		width:48%;
 	}
 
 	#pitbull-cut {
-		display: none;
+		width: 220%;
+		margin-right: -115%;
+		float: right;
 	}
 
-	#eventTrigger {
-		margin-top: 25%;
-	}
-}
-
-@media only screen and (max-width:1280px) and (min-width:1025px) { 
-	#pitbull-cut {
-		width:150%;
+	.mic-wrapper {
+		bottom: -8%;
 	}
 
-	.pu {
-		margin-top: -25%;
-	}
-
-	#eventTrigger {
-		margin-top: 15%;
-	}
 }
