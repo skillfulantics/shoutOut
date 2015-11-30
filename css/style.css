@@ -25,6 +25,7 @@ body {
 
 #pitbull-cut {
 	width: 80%;
+	opacity: 1;
 }
 
 .pitbull-wrapper {
@@ -40,7 +41,7 @@ body {
 }
 
 .mic-wrapper img {
-	width: 80%;
+	width: 90%;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -53,10 +54,6 @@ body {
 		width: 220%;
 		margin-right: -115%;
 		float: right;
-	}
-
-	.mic-wrapper {
-		bottom: -8%;
 	}
 
 }
