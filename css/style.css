@@ -37,7 +37,6 @@ body {
 
 .mic-wrapper {
 	position: absolute;
-	bottom: 0;
 	right: 30%;
 }
 
@@ -59,6 +58,10 @@ body {
 		width: 220%;
 		margin-right: -115%;
 		float: right;
+	}
+
+	.mic-wrapper {
+		bottom: 0;
 	}
 
 }
