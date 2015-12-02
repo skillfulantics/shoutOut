@@ -21,6 +21,7 @@ body {
 
 #form {
 	display: none;
+	padding-top: 15px;
 }
 
 #pitbull-cut {
@@ -42,6 +43,10 @@ body {
 
 .mic-wrapper img {
 	width: 90%;
+}
+
+#form .input-group {
+	margin: 2% auto;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
