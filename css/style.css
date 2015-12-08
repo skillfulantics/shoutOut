@@ -148,7 +148,7 @@
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
    .mic-wrapper {
-   	bottom: -90px;
+   	bottom: -200px;
    }
 
    #pitbull-cut {
