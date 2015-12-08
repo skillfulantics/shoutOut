@@ -4,8 +4,8 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>Worldwide Shoutout - Pitbull</title>
-    <link href="assets/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link type="text/css" href="assets/bootstrap.min.css" rel="stylesheet">
+    <link type="text/css" href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <div class="bg-image">
@@ -72,7 +72,7 @@
           <a href="javascript:void(0)"><img src="images/mic.png" height="862" width="663" alt="" class="img-responsive "></a>
         </div>
           <div class="col-md-4 pu pitbull-wrapper">
-            <img src="images/pitbull.png" id="pitbull-cut" alt="Pitbull Cutout">
+            <img src="images/pitbull.png" id="pitbull-cut" class="img-responsive" alt="Pitbull Cutout">
           </div>
       </div>
     </div>
@@ -80,6 +80,7 @@
   <div class="check-size"></div>
     <script src="assets/jquery.min.js"></script>
     <script src="assets/bootstrap.min.js"></script>
+    <script src="assets/jquery.validate.min.js"></script>
     <script src="js/initiate.js"></script>
     <script src="js/validate-form.js"></script>
 

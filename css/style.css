@@ -33,7 +33,7 @@
 }
 
 #pitbull-cut {
-	width: 73%;
+	width: 100%;
 	opacity: 1;
 }
 
@@ -46,6 +46,7 @@
 .mic-wrapper {
 	position: absolute;
 	right: 30%;
+	bottom: -20px;
 }
 
 #eventTrigger {
@@ -121,6 +122,19 @@
 	#pitbull-cut {
 		width: 160%;
 		margin-right: -60%;
+	}
+
+}
+
+@media screen and (min-width : 1300px) { 
+
+	.mic-wrapper {
+		bottom: initial;
+		right: 30%;
+	}
+
+	#pitbull-cut {
+		width: 76%;
 	}
 
 }
