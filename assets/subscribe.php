@@ -1,5 +1,5 @@
 <?php
-	require_once '../assets/MCAPI.class.php';
+	require_once './assets/MCAPI.class.php';
 	$api = new MCAPI('530bc371b027a2f35d75a72f70d302e9-us12');
 	$merge_vars = array('FNAME'=>$_POST["fname"], 'LNAME'=>$_POST["lname"], 'PHONE'=>$_POST["phone"], 'ZIP'=>$_POST["zip"]);
 

@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-md-4">
           <!-- START FORM -->
-          <form id="form" action="../assets/subscribe.php" method="post">
+          <form id="form" action="./assets/subscribe.php" method="post">
             <div class="row">
               <div class="col-md-6">
                 <div class="input-group input-group-md">
