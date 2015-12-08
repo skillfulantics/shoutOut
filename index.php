@@ -72,7 +72,7 @@
           <a href="javascript:void(0)"><img src="images/mic.png" height="862" width="663" alt="" class="img-responsive "></a>
         </div>
           <div class="col-md-4 pu pitbull-wrapper">
-            <img src="images/pitbull.png" id="pitbull-cut" class="img-responsive" alt="Pitbull Cutout">
+            <img src="images/pitbull.png" id="pitbull-cut" alt="Pitbull Cutout">
           </div>
       </div>
     </div>

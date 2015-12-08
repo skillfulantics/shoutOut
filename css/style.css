@@ -14,6 +14,8 @@
 	overflow-x: hidden;
 	min-width: 100%;
 	min-height: 100%;
+	width: 100%;
+	height: 100%;
 	overflow-y: hidden;
 	position: absolute;
 }
@@ -115,6 +117,11 @@
 		width: 30%;
 	}
 
+	.bg-image {
+		width: initial;
+		height: initial;
+	}
+
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
@@ -126,7 +133,7 @@
 
 }
 
-@media screen and (min-width : 1300px) { 
+@media screen and (min-width : 1450px) { 
 
 	.mic-wrapper {
 		bottom: initial;
@@ -134,7 +141,17 @@
 	}
 
 	#pitbull-cut {
-		width: 76%;
+		width: 75%;
 	}
 
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+   .mic-wrapper {
+   	bottom: -90px;
+   }
+
+   #pitbull-cut {
+   	width: 80%;
+   }
 }
