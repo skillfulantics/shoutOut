@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-md-4">
           <!-- START FORM -->
-          <form id="form" action="./assets/subscribe.php" method="post">
+          <form id="form" action="./subscribe.php" method="post">
             <div class="row">
               <div class="col-md-6">
                 <div class="input-group input-group-md">
@@ -69,9 +69,9 @@
           <img src="images/sirius.png" alt="" class="img-responsive" id="sirius-logo">
         </div>
         <div class="col-md-4 mic-wrapper" id="eventTrigger">
-          <a href="javascript:void(0)"><img src="images/mic.png" height="862" width="663" alt="" class="img-responsive "></a>
+          <a href="javascript:void(0)"><img src="images/mic.png" alt="" class="img-responsive "></a>
         </div>
-          <div class="col-md-4 pu pitbull-wrapper">
+          <div class="col-md-4 pitbull-wrapper">
             <img src="images/pitbull.png" id="pitbull-cut" alt="Pitbull Cutout">
           </div>
       </div>

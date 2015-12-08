@@ -101,7 +101,7 @@
 	}
 }
 
-@media only screen and (min-device-width : 375px) and (max-device-width : 736px) and (orientation : landscape) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) and (orientation : landscape) {
 	
 	#sirius-logo {
 		width: 30%;
@@ -110,7 +110,7 @@
 
 	#pitbull-cut {
 		margin-right: 0;
-		width: 60%;
+		width: 60%!important;
 	}
 
 	.mic-wrapper img {
@@ -154,4 +154,75 @@
    #pitbull-cut {
    	width: 80%;
    }
+}
+
+/*THANK YOU PAGE*/
+
+.pd {
+	padding-top: 5%;
+}
+
+.pitbull-wrapper-left img {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 25%;
+}
+
+.thanks-options {
+	position: fixed;
+	left: 10%;
+	bottom: 20%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) and (orientation : portrait) {
+
+	.thanks-header {
+		max-width: 100%!important;
+	}
+
+	.thanks-options {
+		left: 0;
+		bottom: 0;
+		width: 45%;
+	}
+
+	.pitbull-wrapper-left img {
+		left: initial!important;
+		right: 0!important;
+		width: 55%!important;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+
+	.pitbull-wrapper-left img {
+		width: 50%!important;
+		right: 0;
+		left: initial;
+	}
+
+	.thanks-options {
+		position: initial;
+		left: initial;
+		bottom: initial;
+	}
+
+	.thanks-options > .col-sm-2 {
+		width: 28%!important;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 736px) and (orientation : landscape) {
+
+	.thanks-options {
+		right: 0;
+		left: initial;
+		width: 80%;	
+	}
+
+	.thanks-options > .col-sm-2 {
+		display: table-cell;
+		width: 20%;
+	}
 }

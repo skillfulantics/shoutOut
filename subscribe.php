@@ -10,6 +10,6 @@
 	if ($api->errorCode){
 		echo "<h4>Please try again.</h4>";
 	} else {
-		echo "<h4>Thank you, you have been added to our mailing list.</h4>";
+		header("Location: ./thankyou.php");
 	}
 ?>
