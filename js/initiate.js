@@ -18,10 +18,3 @@ $( "#eventTrigger" ).click(function() {
 		$("#form").slideDown("slow");
 	}
 });
-
-// if (window.outerWidth && window.outerWidth < 960) {
-
-// 	$("#eventTrigger").click(function() {
-// 		showSkills();
-// 	});
-// }

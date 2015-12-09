@@ -17,7 +17,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4" style="z-index: 999;">
           <!-- START FORM -->
           <form id="form" action="./subscribe.php" method="post">
             <div class="row">
@@ -58,6 +58,12 @@
             </div>
             <div class="row">
              <div class="col-md-12">
+                <input type="hidden" id="link" name="link" value="" />
+                <div id="recordModule"></div>
+              </div>
+            </div>
+            <div class="row">
+             <div class="col-md-12">
                 <div class="input-group input-group-md">
                   <span class="input-group-addon">✓</span>
                   <input name="submit" id="submit" type="submit" class="form-control">
@@ -83,6 +89,11 @@
     <script src="assets/jquery.validate.min.js"></script>
     <script src="js/initiate.js"></script>
     <script src="js/validate-form.js"></script>
+    <script>
+        $(function(){
+      $("#recordModule").load("audior.html"); 
+    });
+    </script> 
 
   </body>
 </html>
