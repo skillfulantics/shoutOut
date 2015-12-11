@@ -4,13 +4,9 @@ if(!is_dir("recordings")){
 	$res = mkdir("recordings",0777); 
 }
 
-if(!is_dir("recordings/mobileRecordings")){
-	$res = mkdir("recordings/mobileRecordings",0777); 
-}
-
 if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK){
 
-	$UploadDirectory	= 'recordings/mobileRecordings/'; 	
+	$UploadDirectory	= 'recordings/'; 	
 
 	//Note :if "memory_limit" , "upload_max_filesize" or post_max_size is set to low in "php.ini" it won't work. 
 	
@@ -34,7 +30,7 @@ if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK)
 	$File_Name          = strtolower($_FILES['FileInput']['name']);
 	$File_Ext           = substr($File_Name, strrpos($File_Name, '.')); 
 	$Random_Number      = rand(0, 9999999999); 
-	$NewFileName 		= "mobile_audio_recording_".$Random_Number.$File_Ext; 
+	$NewFileName 		= "audio_recording_".$Random_Number.$File_Ext; 
 	
 	if(move_uploaded_file($_FILES['FileInput']['tmp_name'], $UploadDirectory.$NewFileName )){
 		

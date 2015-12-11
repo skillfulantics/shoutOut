@@ -59,6 +59,7 @@
             <div class="row">
              <div class="col-md-12">
                 <input type="hidden" id="link" name="link" value="" />
+                <p id="ios-note">Hi there! We notice you're using an iOS device. Due to system limitations, please record a video when prompted and have the video facing a black screen for optimal upload times(video will be converted into audio recording). Sorry for the inconvinence.</p>
                 <div id="recordModule"></div>
               </div>
             </div>
