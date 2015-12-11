@@ -230,3 +230,8 @@
 		width: 20%;
 	}
 }
+
+
+#ios-note {
+	display: none;
+}

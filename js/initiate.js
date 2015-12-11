@@ -18,3 +18,10 @@ $( "#eventTrigger" ).click(function() {
 		$("#form").slideDown("slow");
 	}
 });
+
+$(document).ready(function(){
+	i = navigator.platform;
+	if( i === 'iPhone' || i === 'iPad' || i === 'iPod') {
+		$("#ios-note").show();
+	}
+});
