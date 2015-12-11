@@ -17,7 +17,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-4" style="z-index: 999;">
+        <div class="col-md-4" id="form-wrapper">
           <!-- START FORM -->
           <form id="form" action="./subscribe.php" method="post">
             <div class="row">

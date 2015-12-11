@@ -46,7 +46,7 @@
 }
 
 .mic-wrapper {
-	position: absolute;
+	position: fixed;
 	right: 30%;
 	bottom: -20px;
 }
@@ -63,10 +63,15 @@
 	margin: 2% auto;
 }
 
+#form-wrapper {
+	z-index: 999;
+}
+
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
 
 	.pitbull-wrapper {
 		width:48%;
+		position: fixed;
 	}
 
 	#pitbull-cut {
@@ -90,6 +95,14 @@
 
 	.bg-image {
 		overflow-y: scroll;
+	}
+
+	.custom-file-input::before {
+		margin-left: 16%!important;
+	}
+
+	#form-wrapper {
+		z-index: initial;
 	}
 }
 
@@ -117,13 +130,13 @@
 		width: 60%!important;
 	}
 
-	.mic-wrapper img {
-		width: 30%;
-	}
-
 	.bg-image {
 		width: initial;
 		height: initial;
+	}
+	
+	.mic-wrapper img {
+		width: 30%!important;
 	}
 
 }
@@ -149,7 +162,7 @@
 
 }
 
-@media screen and (max-width : 1366px) { 
+@media screen and (min-width : 736px) and (max-width : 1366px) { 
 
 	.mic-wrapper img {
 		width: 80%;

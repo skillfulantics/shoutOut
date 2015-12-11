@@ -9,6 +9,7 @@ function showSkills() {
 if ($(".check-size").css("float") == "right") {
 	$("#eventTrigger").click(function() {
 		showSkills();
+		$('#form-wrapper').css('z-index', '999');
 	});
 }
 
