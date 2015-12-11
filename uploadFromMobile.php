@@ -1,19 +1,14 @@
 <?php
-
 if(!is_dir("recordings")){
 	$res = mkdir("recordings",0777); 
 }
-
 if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK){
-
 	$UploadDirectory	= 'recordings/'; 	
-
 	//Note :if "memory_limit" , "upload_max_filesize" or post_max_size is set to low in "php.ini" it won't work. 
 	
 	if (!isset($_SERVER['HTTP_X_REQUESTED_WITH'])){
 		die();
 	}
-
 	/*if ($_FILES["FileInput"]["size"] > 5242880){
 		die("File size is too big!");
 	}*/
@@ -37,13 +32,12 @@ if(isset($_FILES["FileInput"]) && $_FILES["FileInput"]["error"]== UPLOAD_ERR_OK)
 		$currentDir = getcwd();
 		
 		//we execute ffmpeg to start the conversion process from 3gp and mov files containging aac sound to mp3. The PHP process will hang until the conversion ends. Audio conversions are very fast and they should not notmrally affect you. If they do the output of exec/ffmpeg must be redirected to a file or another output stream. See http://php.net/manual/en/function.exec.php for details.
-		exec($currentDir."/ffmpeg -i ".$currentDir."/recordings/mobileRecordings/".$NewFileName." -t 10 ".$currentDir."/recordings/mobileRecordings/mobile_audio_recording_".$Random_Number.".mp3");
+		exec($currentDir."/ffmpeg -i ".$currentDir."/recordings/".$NewFileName." -t 10 ".$currentDir."/recordings/audio_recording_".$Random_Number.".mp3");
 		
 		//we remove the initial raw unconverted file
 		unlink($UploadDirectory.$NewFileName);
-
 		//we let the browser know the conversion ended. The browser will embed the mp3 file for playback.
-		die('Audio file uploaded and converted to: mobile_audio_recording_'.$Random_Number.'.mp3');	
+		die('Audio file uploaded and converted to: audio_recording_'.$Random_Number.'.mp3');	
 	}else{
 		die('error uploading File!');
 	}

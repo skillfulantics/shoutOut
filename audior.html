@@ -58,8 +58,8 @@ object:focus { outline:none; }
  
     <body>
     <script type="text/javascript" src="swfobject.js"></script>
-	 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-	 <script type="text/javascript" src="js/jquery.form.min.js"></script>
+	 <script type="text/javascript" src="assets/jquery.min.js"></script>
+	 <script type="text/javascript" src="assets/jquery.form.min.js"></script>
         <script type="text/javascript">
             var swfVersionStr = "11.1.0";
             var xiSwfUrlStr = "";
@@ -104,6 +104,9 @@ object:focus { outline:none; }
 	 
 <!-- The following script is used for mobile devices ONLY -->
 <script type="text/javascript">
+
+var fileLink;
+
 		$(document).ready(function() { 
 			var options = { 
 					target:   '#output',  
@@ -139,8 +142,11 @@ object:focus { outline:none; }
 				
 				var audio = document.getElementById("recorderAudio");
 				setTimeout(function(){
-					audio.setAttribute("src", "recordings/mobileRecordings/"+recordingName);
+					audio.setAttribute("src", "recordings/"+recordingName);
 				}, 2000);
+
+				fileLink = recordingName
+				document.getElementById("link").value='http://wwshoutout.com/recordings/'+fileLink;
 				
 			}
 

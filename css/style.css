@@ -5,7 +5,7 @@
 
 
 .bg-image {
-	background: url(../images/bg-concert.jpg) no-repeat center center fixed;
+	background: url(../images/bg-concert.jpg) no-repeat center center;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
@@ -16,7 +16,6 @@
 	min-height: 100%;
 	width: 100%;
 	height: 100%;
-	overflow-y: hidden;
 	position: absolute;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .pitbull-wrapper {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	right: 0px;
 }
@@ -71,7 +70,6 @@
 
 	.pitbull-wrapper {
 		width:48%;
-		position: fixed;
 	}
 
 	#pitbull-cut {
@@ -91,10 +89,6 @@
 
 	.check-size {
 		float: right;
-	}
-
-	.bg-image {
-		overflow-y: scroll;
 	}
 
 	.custom-file-input::before {

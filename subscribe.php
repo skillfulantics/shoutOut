@@ -8,7 +8,7 @@
 	$retval = $api->listSubscribe( 'ee01d482e3', $_POST["email"], $merge_vars, 'html', false, true );
 
 	if ($api->errorCode){
-		echo "<h4>Please try again.</h4>";
+		echo "<h2>Please record an audio shoutout.</h2>";
 	} else {
 		header("Location: ./thankyou.php");
 	}
