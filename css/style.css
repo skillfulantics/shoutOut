@@ -140,12 +140,19 @@
 @media screen and (min-width : 1450px) { 
 
 	.mic-wrapper {
-		bottom: initial;
 		right: 30%;
 	}
 
 	#pitbull-cut {
 		width: 75%;
+	}
+
+}
+
+@media screen and (max-width : 1366px) { 
+
+	.mic-wrapper img {
+		width: 80%;
 	}
 
 }
