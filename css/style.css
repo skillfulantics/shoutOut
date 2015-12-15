@@ -36,6 +36,7 @@
 #pitbull-cut {
 	width: 85%;
 	opacity: 1;
+	float:left;
 }
 
 .pitbull-wrapper {
@@ -144,10 +145,18 @@
 
 }
 
-@media screen and (max-height: 900px) { 
+@media screen and (max-height: 1020px) and (min-width: 1400px) { 
+
+	.mic-wrapper img {
+		width: 60%;
+	}
 
 	.mic-wrapper {
-		bottom: -10%;
+		right: 25%;
+	}
+
+	#pitbull-cut {
+		width: 73%;
 	}
 
 }
