@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$("#form").validate({
 		// if valid, post data via AJAX
 		submitHandler: function(form) {
-			$.post("../assets/subscribe.php", { fname: $("#fname").val(), lname: $("#lname").val(), email: $("#email").val(), zip: $("#zip").val(), phone: $("#phone").val(), function(data) {
+			$.post("../assets/subscribe.php", { fname: $("#fname").val(), lname: $("#lname").val(), email: $("#email").val(), zip: $("#zip").val(), phone: $("#phone").val(), file: $("#link").val(), function(data) {
 				$('#response').html(data);
 			});
 		},
@@ -25,6 +25,9 @@ $(document).ready(function() {
 			phone: {
 				required: true,
 				phoneUS: true
+			},
+			file: {
+				required: true
 			}
 		}
 	});
