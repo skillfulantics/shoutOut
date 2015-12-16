@@ -16,6 +16,12 @@
 
     <div class="container">
       <div class="row">
+        <div class="col-md-4 mic-wrapper" id="eventTrigger">
+            <a href="javascript:void(0)"><img src="images/mic.png" alt="" class="img-responsive "></a>
+          </div>
+        <div class="col-md-4">
+            <img src="images/sirius.png" alt="" class="img-responsive" id="sirius-logo">
+          </div>
         <div class="col-md-4" id="form-wrapper">
           <!-- START FORM -->
           <form id="form" action="./subscribe.php" method="post">
@@ -72,10 +78,6 @@
             </div>
           </form>
           <!-- END FORM -->
-          <img src="images/sirius.png" alt="" class="img-responsive" id="sirius-logo">
-        </div>
-        <div class="col-md-4 mic-wrapper" id="eventTrigger">
-          <a href="javascript:void(0)"><img src="images/mic.png" alt="" class="img-responsive "></a>
         </div>
           <div class="col-md-4 pitbull-wrapper">
             <img src="images/pitbull.png" id="pitbull-cut" alt="Pitbull Cutout">
