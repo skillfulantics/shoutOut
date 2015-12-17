@@ -58,7 +58,7 @@
               <div class="col-md-6">
                 <div class="input-group input-group-md">
                   <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                  <input name="phone" id="phone" type="text" class="form-control" value="" maxlength="12" placeholder="###-###-####" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                  <input name="phone" id="phone" type="tel" class="form-control" placeholder="(###) ###-####" required>
                 </div>            
               </div>
             </div>
@@ -92,6 +92,7 @@
     <script src="assets/jquery.validate.min.js"></script>
     <script src="js/initiate.js"></script>
     <script src="js/validate-form.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script>
         $(function(){
       $("#recordModule").load("audior.html"); 

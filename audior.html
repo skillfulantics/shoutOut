@@ -33,7 +33,7 @@ object:focus { outline:none; }
   visibility: hidden;
 }
 .custom-file-input::before {
-  content: 'Record Shoutout';
+  content: '1. Record Shoutout';
   display: inline-block;
   background-color:#FF784F;
   border:0px;
@@ -45,7 +45,7 @@ object:focus { outline:none; }
   text-align:center;
   color:#fff;
   font-size:18px;
-  margin-left: 34px;
+  margin-left: 30px;
 }
 .custom-file-input:hover::before {
   border-color: black;
@@ -336,7 +336,7 @@ var fileLink;
         <div align="center" id="flashContent">
 			<form action="uploadFromMobile.php" method="post" enctype="multipart/form-data" id="recordingForm">
 				<div><input name="FileInput" id="FileInput" type="file" accept="audio/*" capture="microphone" value="Start Recording" class="custom-file-input"/></div>
-				<input type="submit"  id="submit-btn" value="2. Upload"  class = "btnUpload"/>
+				<input type="submit"  id="submit-btn" value="2. Upload Shoutout"  class = "btnUpload"/>
 				<img src="ajax-loader.gif" id="loading-img" style="display:none;" alt="Please Wait"/>
 			</form>
 			<div id="progressbox" ><div id="progressbar"></div ><div id="statustxt">0%</div></div>

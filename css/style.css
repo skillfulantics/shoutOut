@@ -41,7 +41,7 @@
 .pitbull-wrapper {
 	position: fixed;
 	bottom: 0px;
-	right: 0px;
+	right: 3%;
 }
 
 .mic-wrapper {
@@ -64,6 +64,8 @@
 
 #link {
 	opacity: 0;
+	height: 0;
+	width: 0;
 }
 
 #form-wrapper {
@@ -71,8 +73,18 @@
 	margin-left: 3%;
 }
 
+#Audior {
+	border-right: 2px solid white;
+	border-left: 2px solid white;
+	border-radius: 4px;
+}
+
 #sirius-logo {
 	margin-top: 25%;
+}
+
+#recordModule {
+	margin-top: 2%;
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 1024px) {
@@ -166,6 +178,14 @@
 	.custom-file-input::before {
 		margin-left: 46px!important;
 	}
+}
+
+@media screen and (min-width: 1050px) and (max-width: 1200px) {
+
+	#form-wrapper {
+		width: 40%;
+		margin-left: -1%;
+	} 
 }
 
 @media screen and (max-height: 1020px) and (min-width: 1400px) { 
